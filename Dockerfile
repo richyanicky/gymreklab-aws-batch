@@ -14,9 +14,9 @@ RUN apt-get update && apt-get install -qqy \
     zlib1g-dev
 
 # Download, compile, and install GangSTR
-RUN wget -O GangSTR-2.1.tar.gz https://github.com/gymreklab/GangSTR/releases/download/v2.1/GangSTR-2.1.tar.gz
-RUN tar -xzvf GangSTR-2.1.tar.gz
-WORKDIR GangSTR-2.1
+RUN wget -O GangSTR-2.1.4.tar.gz https://github.com/gymreklab/GangSTR/releases/download/v2.1.4/GangSTR-2.1.4.tar.gz
+RUN tar -xzvf GangSTR-2.1.4.tar.gz
+WORKDIR GangSTR-2.1.4
 RUN ./install-gangstr.sh
 RUN ldconfig
 
